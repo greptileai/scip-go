@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/document"
-	"github.com/sourcegraph/scip-go/internal/handler"
-	"github.com/sourcegraph/scip-go/internal/lookup"
+	"github.com/greptileai/scip-go/internal/document"
+	"github.com/greptileai/scip-go/internal/handler"
+	"github.com/greptileai/scip-go/internal/lookup"
 	"github.com/sourcegraph/scip/bindings/go/scip"
 	"golang.org/x/tools/go/packages"
 )

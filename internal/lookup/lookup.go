@@ -8,9 +8,9 @@ import (
 	"go/types"
 	"sync"
 
-	"github.com/sourcegraph/scip-go/internal/newtypes"
-	"github.com/sourcegraph/scip-go/internal/output"
-	"github.com/sourcegraph/scip-go/internal/symbols"
+	"github.com/greptileai/scip-go/internal/newtypes"
+	"github.com/greptileai/scip-go/internal/output"
+	"github.com/greptileai/scip-go/internal/symbols"
 	"github.com/sourcegraph/scip/bindings/go/scip"
 	"golang.org/x/tools/go/packages"
 )
@@ -55,7 +55,7 @@ func (p *Package) Set(pos token.Pos, symbol *scip.SymbolInformation) {
 			// fields are defined in the same statement with the same anonymous
 			// struct type. By ignoring this case, the last field name will
 			// be used for the type name.
-			// Ideal fix: https://github.com/sourcegraph/scip-go/issues/95
+			// Ideal fix: https://github.com/greptileai/scip-go/issues/95
 			emittedLogLineMu.Lock()
 			if _, ok := emittedLogLine[pos]; !ok {
 				output.Logf("[scip.lookup] Overriding original symbol %s with %s at %v", original.Symbol, symbol.Symbol, p.pkg.Fset.Position(pos))

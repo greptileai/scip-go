@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/command"
-	"github.com/sourcegraph/scip-go/internal/output"
+	"github.com/greptileai/scip-go/internal/command"
+	"github.com/greptileai/scip-go/internal/output"
 	"golang.org/x/tools/go/vcs"
 )
 

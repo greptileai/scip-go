@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/config"
-	"github.com/sourcegraph/scip-go/internal/handler"
-	"github.com/sourcegraph/scip-go/internal/newtypes"
-	"github.com/sourcegraph/scip-go/internal/output"
+	"github.com/greptileai/scip-go/internal/config"
+	"github.com/greptileai/scip-go/internal/handler"
+	"github.com/greptileai/scip-go/internal/newtypes"
+	"github.com/greptileai/scip-go/internal/output"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
 	"golang.org/x/mod/semver"
@@ -115,7 +115,7 @@ func IsStandardLib(pkg *packages.Package) bool {
 	//  -> net
 	//  -> true
 	//
-	//  PkgPath = github.com/sourcegraph/scip-go/...
+	//  PkgPath = github.com/greptileai/scip-go/...
 	//  -> github.com/
 	//  -> false
 	base := strings.Split(pkg.PkgPath, "/")[0]

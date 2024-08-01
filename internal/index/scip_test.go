@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sourcegraph/scip-go/internal/command"
-	"github.com/sourcegraph/scip-go/internal/config"
-	"github.com/sourcegraph/scip-go/internal/index"
+	"github.com/greptileai/scip-go/internal/command"
+	"github.com/greptileai/scip-go/internal/config"
+	"github.com/greptileai/scip-go/internal/index"
 	"github.com/sourcegraph/scip/bindings/go/scip"
 	"github.com/sourcegraph/scip/bindings/go/scip/testutil"
 	"google.golang.org/protobuf/proto"

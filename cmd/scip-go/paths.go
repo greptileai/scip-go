@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/git"
+	"github.com/greptileai/scip-go/internal/git"
 )
 
 var wd = newCachedString(func() string {

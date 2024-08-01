@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/efritz/pentimento"
-	"github.com/sourcegraph/scip-go/internal/parallel"
+	"github.com/greptileai/scip-go/internal/parallel"
 )
 
 type Verbosity int

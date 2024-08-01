@@ -1,9 +1,10 @@
-  // This is documentation for this package.
-  package packagedocumentation
-//        ^^^^^^^^^^^^^^^^^^^^ definition github.com/sourcegraph/scip-go . `github.com/sourcegraph/scip-go/internal/testdata/snapshots/input/package-documentation`/
+// This is documentation for this package.
+package packagedocumentation
+
+//        ^^^^^^^^^^^^^^^^^^^^ definition github.com/greptileai/scip-go . `github.com/greptileai/scip-go/internal/testdata/snapshots/input/package-documentation`/
 //        documentation This is documentation for this package.
-  
-  func Exported() {}
-//     ^^^^^^^^ definition github.com/sourcegraph/scip-go . `github.com/sourcegraph/scip-go/internal/testdata/snapshots/input/package-documentation`/Exported().
+
+func Exported() {}
+
+//     ^^^^^^^^ definition github.com/greptileai/scip-go . `github.com/greptileai/scip-go/internal/testdata/snapshots/input/package-documentation`/Exported().
 //     documentation ```go
-  

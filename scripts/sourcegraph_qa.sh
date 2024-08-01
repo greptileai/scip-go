@@ -60,7 +60,7 @@ fi
 
 # Define an array of repositories to download
 repos=(
-    "github.com/sourcegraph/scip-go"
+    "github.com/greptileai/scip-go"
     "github.com/sourcegraph-testing/etcd"
     "github.com/sourcegraph-testing/tidb"
     "github.com/sourcegraph-testing/titan"

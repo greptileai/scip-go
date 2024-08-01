@@ -1,7 +1,8 @@
-  package packagedocumentation
-//        ^^^^^^^^^^^^^^^^^^^^ reference github.com/sourcegraph/scip-go . `github.com/sourcegraph/scip-go/internal/testdata/snapshots/input/package-documentation`/
+package packagedocumentation
+
+//        ^^^^^^^^^^^^^^^^^^^^ reference github.com/greptileai/scip-go . `github.com/greptileai/scip-go/internal/testdata/snapshots/input/package-documentation`/
   
   func AlsoExporter() {}
-//     ^^^^^^^^^^^^ definition github.com/sourcegraph/scip-go . `github.com/sourcegraph/scip-go/internal/testdata/snapshots/input/package-documentation`/AlsoExporter().
+//     ^^^^^^^^^^^^ definition github.com/greptileai/scip-go . `github.com/greptileai/scip-go/internal/testdata/snapshots/input/package-documentation`/AlsoExporter().
 //     documentation ```go
   

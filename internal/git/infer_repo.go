@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/command"
+	"github.com/greptileai/scip-go/internal/command"
 )
 
 // InferRepo gets a human-readable repository name from the git clone enclosing
@@ -31,7 +31,7 @@ func parseRemote(remoteURL string) (string, error) {
 		}
 	}
 
-	// e.g., https://github.com/sourcegraph/scip-go.git
+	// e.g., https://github.com/greptileai/scip-go.git
 	if url, err := url.Parse(remoteURL); err == nil {
 		return url.Hostname() + strings.TrimSuffix(url.Path, ".git"), nil
 	}

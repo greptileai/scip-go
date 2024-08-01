@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/agnivade/levenshtein"
-	"github.com/sourcegraph/scip-go/internal/handler"
+	"github.com/greptileai/scip-go/internal/handler"
 	"golang.org/x/tools/go/packages"
 )
 

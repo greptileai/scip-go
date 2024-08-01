@@ -6,10 +6,10 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/handler"
-	"github.com/sourcegraph/scip-go/internal/loader"
-	"github.com/sourcegraph/scip-go/internal/lookup"
-	"github.com/sourcegraph/scip-go/internal/output"
+	"github.com/greptileai/scip-go/internal/handler"
+	"github.com/greptileai/scip-go/internal/loader"
+	"github.com/greptileai/scip-go/internal/lookup"
+	"github.com/greptileai/scip-go/internal/output"
 	"github.com/sourcegraph/scip/bindings/go/scip"
 	"golang.org/x/tools/container/intsets"
 	"golang.org/x/tools/go/packages"
@@ -130,7 +130,7 @@ func AddImplementationRelationships(pkgs loader.PackageLookup, allPackages loade
 		// local type -> remote interface
 		findImplementations(localTypes, remoteInterfaces, symbols)
 
-		// TODO(author: tjdevries, issue: https://github.com/sourcegraph/scip-go/issues/64)
+		// TODO(author: tjdevries, issue: https://github.com/greptileai/scip-go/issues/64)
 		// We should consider what this would even look like?
 		// I don't think this makes sense the current way that we are emitting
 		// implementations. You wouldn't even catch these anyways when uploading

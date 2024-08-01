@@ -1,4 +1,4 @@
-module github.com/sourcegraph/scip-go
+module github.com/greptileai/scip-go
 
 go 1.22
 

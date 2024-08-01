@@ -9,8 +9,8 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/sourcegraph/scip-go/internal/lookup"
-	"github.com/sourcegraph/scip-go/internal/symbols"
+	"github.com/greptileai/scip-go/internal/lookup"
+	"github.com/greptileai/scip-go/internal/symbols"
 	"github.com/sourcegraph/scip/bindings/go/scip"
 	"golang.org/x/tools/go/packages"
 )

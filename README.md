@@ -2,6 +2,14 @@
 
 SCIP indexer for Golang.
 
+### Local Build
+
+```sh
+go build -o scip-go ./cmd/scip-go
+```
+
+### Important Files
+
 # Quick Start
 
 ## Installation
@@ -9,7 +17,7 @@ SCIP indexer for Golang.
 This will build and install the latest version of `scip-go`
 
 ```
-go install github.com/sourcegraph/scip-go/cmd/scip-go@latest
+go install github.com/greptileai/scip-go/cmd/scip-go@latest
 ```
 
 You can confirm it's been installed by running:
@@ -27,7 +35,6 @@ scip-go
 ```
 
 If `scip-go` is unable to determine some project information, you may need to provide some command-line arguments.
-
 
 ```
 scip-go --module-name=NAME --module-version=VERSION
@@ -47,7 +54,6 @@ scip-go --help
     - `$ scip-go --go-version=go1.X.Y` and then upload that index to your local sourcegraph instance.
     - After you've done this, you should be able to navigate to the standard library.
 
-
 (NOTE: Projects without a `go.mod` may experience challenges indexing. See next section for details)
 
 ## Indexing without shelling to `go` binary
@@ -66,7 +72,7 @@ NOTE: The rest of this isn't properly implemented yet. It's on the todo list for
 
 ```
 # Install scip-go
-go install github.com/sourcegraph/scip-go/cmd/scip-go@latest
+go install github.com/greptileai/scip-go/cmd/scip-go@latest
 
 # Run scip-go
 scip-go
@@ -77,7 +83,7 @@ src code-intel upload -github-token='${{ secrets.GITHUB_TOKEN }}' -no-progress
 
 ## Docker
 
-To build a self-contained Docker container with the indexer, use 
+To build a self-contained Docker container with the indexer, use
 the following command:
 
 ```bash

@@ -3,7 +3,7 @@ package git
 import (
 	"fmt"
 
-	"github.com/sourcegraph/scip-go/internal/command"
+	"github.com/greptileai/scip-go/internal/command"
 )
 
 // InferModuleVersion returns the version of the module declared in the given
